@@ -1,0 +1,65 @@
+/* Tabla de estudiantes */
+.tabla {
+    width: 100%;
+    max-width: 90%; /* Limita el ancho de la tabla para que no sea tan grande */
+    margin: 2rem auto; /* Centra la tabla dentro del contenedor */
+    border-collapse: collapse;
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid #00ffc6;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #00ffc6;
+    overflow-x: auto; /* Permite desplazamiento horizontal si es necesario */
+    table-layout: auto; /* Permite que las columnas se ajusten al contenido */
+}
+
+/* Estilo para las celdas de la tabla */
+.tabla th, .tabla td {
+    padding: 1rem; /* Espaciado en las celdas */
+    text-align: center;
+    border-bottom: 1px solid #00ffc6;
+    white-space: nowrap; /* Evita que el contenido se desborde a nuevas líneas */
+}
+
+/* Estilo para los encabezados */
+.tabla th {
+    background-color: #00ffc6;
+    color: #112233;
+    text-shadow: 0 0 5px #00ffc6;
+    font-size: 1.2rem; /* Aumenta el tamaño de la fuente de los encabezados */
+    padding: 1.2rem; /* Aumenta el espacio en los encabezados */
+}
+
+/* Estilo para las celdas de datos */
+.tabla td {
+    background-color: #112233;
+    color: #00ffc6;
+    text-shadow: 0 0 5px #00ffc6;
+    font-size: 1rem; /* Ajuste el tamaño de la fuente en las celdas */
+}
+
+/* Efecto hover en las filas */
+.tabla tr:hover {
+    background-color: #00e0a6;
+    color: #112233;
+}
+
+/* Opcional: Estilo para la tabla cuando se desborda */
+.tabla-wrapper {
+    overflow-x: auto; /* Añadido para permitir desplazamiento horizontal si la tabla es muy ancha */
+    padding-bottom: 1rem; /* Espacio adicional en la parte inferior para el desplazamiento */
+}
+/* Ajusta el tamaño y la apariencia de los botones dentro de los formularios */
+form input[type="submit"] {
+    background: #00ffc6;
+    border: none;
+    color: #112233;
+    padding: 0.5rem 1rem; /* Reduci el tamaño del padding */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+form input[type="submit"]:hover {
+    background: #00e0a6;
+    transform: scale(1.05);
+}
